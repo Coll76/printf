@@ -6,4 +6,7 @@ int print_string(va_list val);
 int _strlen(char *str);
 int int_strlen(const char *str);
 int _putchar(char c);
+void print_buffer(char buffer[], int *buff_ind);
+int _printf(const char *format, ...);
+void print_buffer(char buffer[], int *buff_ind);
 #endif
