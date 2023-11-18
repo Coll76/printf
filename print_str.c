@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _strlen - returns length of a string
@@ -9,10 +8,10 @@ int _strlen(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != 0; i++)
+		;
 		return (i);
 }
-#include <stdio.h>
 #include "main.h"
 /**
  *int_strlen - applied for constant char pointer str
@@ -23,6 +22,7 @@ int int_strlen(const char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != 0; i++)
+		;
 		return (i);
 }
